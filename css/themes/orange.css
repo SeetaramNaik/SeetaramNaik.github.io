@@ -1,0 +1,9 @@
+:root {
+  --primary-background-color: linear-gradient(
+    90deg,
+    rgba(217, 147, 16, 1) 4%,
+    rgba(227, 184, 39, 1) 95%,
+    rgba(227, 188, 58, 1) 100%
+  );
+  --primary-text-color: #fff;
+}

@@ -10,7 +10,7 @@ html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(219, 36, 36, 0);
   transition: 0.5s !important;
   scroll-behavior: smooth !important;
   user-select: none;
@@ -35,9 +35,28 @@ body {
   /* background: #005AA7;  
   background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  
   background: linear-gradient(to right, #FFFDE4, #005AA7);  */
-  background: #0f0c29;
-  background: -webkit-linear-gradient(to right, #0f0c29, #302b63, #24243e);
-  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  /* background: #0f0c29; */
+  /* background: -webkit-linear-gradient(to right, #0f0c29, #302b63, #24243e); */
+
+  /* background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
+  background: var(--primary-background-color);
+}
+
+.myname{
+  font-weight: 1000;
+}
+
+/*FOR THEME*/
+.theme {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+.theme-selector {
+  padding: 3px;
+  border-radius: 50x;
+  background-color: #000;
+  color: #fff;
 }
 
 a {
@@ -58,16 +77,26 @@ h5,
 h6,
 p {
   /* color: #020202 !important; */
-  color: #fff !important;
+  color: var(--primary-text-color) !important;
 }
 
-.faded-1 {
+/* .faded-1 {
   height: 7.4rem;
   background-image: linear-gradient(
     360deg,
     transparent,
     rgba(8, 8, 8, 0.55),
     #000
+  );
+  margin-bottom: 50px;
+} */
+.faded-1 {
+  height: 7.4rem;
+  background-image: linear-gradient(
+    360deg,
+    transparent,
+    var(--secondary-background-color),
+    var(--secondary-background-color)
   );
   margin-bottom: 50px;
 }
@@ -86,7 +115,8 @@ p {
   /* background: #0f0c29; */
   /* background: -webkit-linear-gradient(to right, #0f0c29, #302b63, #24243e);
   background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
-  background: #000;
+  position: relative;
+  background: var(--secondary-background-color);
 }
 .footer {
   /* background-color: #414e58; */
@@ -99,7 +129,7 @@ p {
 }
 
 .navbar {
-  backdrop-filter: blur(10px) !important;
+  backdrop-filter: blur(0.1px) !important;
   padding: 2px !important;
   background-color: rgba(0, 0, 0, 0.747) !important;
 }
@@ -267,7 +297,6 @@ p {
   height: 100%;
   width: 100%;
   /* float: left;   */
-  
 }
 .btm-sliders {
   position: absolute;
@@ -322,68 +351,78 @@ p {
     width: 450px;
   }
 }
-@keyframes certificate{
-  0%{
+@keyframes certificate {
+  0% {
     left: 0;
   }
-  20%{
+  20% {
     left: 0;
   }
-  25%{
+  25% {
     left: -100%;
   }
 }
-.certificates{
-  display:flex;
+.certificates {
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.all-cert{
-  width:800px;
+.all-cert {
+  width: 800px;
+  
+}
+.cert{
+  box-shadow: 5px 10px 18px #888888;
 }
 
-.prev,.next{
-  width:40px;
+.prev,
+.next {
+  width: 40px;
   height: 30px;
-  top:50%;
-  background: rgb(58,14,237);
-background: linear-gradient(90deg, rgba(58,14,237,1) 4%, rgba(89,23,175,1) 100%);
+  top: 50%;
+  background: #000;
+  /* background: rgb(58, 14, 237);
+  background: linear-gradient(
+    90deg,
+    rgba(58, 14, 237, 1) 4%,
+    rgba(89, 23, 175, 1) 100%
+  ); */
 }
 @media screen and (max-width: 950px) {
-  .all-cert{
-    width:750px;
+  .all-cert {
+    width: 750px;
     height: 650px;
   }
 }
 @media screen and (max-width: 820px) {
-  .all-cert{
-    width:700px;
+  .all-cert {
+    width: 700px;
     height: 600px;
   }
 }
 @media screen and (max-width: 750px) {
-  .all-cert{
-    width:600px;
+  .all-cert {
+    width: 600px;
     height: 500px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .all-cert{
-    width:500px;
+  .all-cert {
+    width: 500px;
     height: 400px;
   }
 }
 @media screen and (max-width: 550px) {
-  .all-cert{
-    width:450px;
+  .all-cert {
+    width: 450px;
     height: 350px;
   }
 }
 @media screen and (max-width: 500px) {
-  .all-cert{
-    width:400px;
+  .all-cert {
+    width: 400px;
     height: 300px;
   }
 }
@@ -395,15 +434,18 @@ background: linear-gradient(90deg, rgba(58,14,237,1) 4%, rgba(89,23,175,1) 100%)
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  padding: 20px;
+  padding: 30px;
   border-radius: 30px;
-  width: 80%;
+  width: 90%;
+  max-height: 800px;
+  overflow: scroll;
+  box-shadow: 5px 10px 18px #888888;
 }
 .project {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 30px;
   transition: 0.5s;
 }
 .project:hover {
@@ -414,6 +456,7 @@ background: linear-gradient(90deg, rgba(58,14,237,1) 4%, rgba(89,23,175,1) 100%)
   width: 250px;
   border-radius: 20px;
   margin-bottom: 10px;
+  box-shadow: 5px 10px 18px #888888;
 }
 
 /* ========================== Contact Us ========================*/
