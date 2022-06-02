@@ -5,8 +5,10 @@
 *::after {
   box-sizing: border-box;
 }
-
 html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -19,13 +21,15 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   /* font-family: 'Roboto', sans-serif; */
   font-family: 'Bungee', cursive;
   font-family: 'Comfortaa', cursive;
   font-family: 'Merriweather Sans', sans-serif;
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.5;
   color: #6c757d;
   text-align: left;
@@ -44,7 +48,52 @@ body {
 
 .myname {
   font-weight: 1000;
-  font-size: 80px;
+  font-size: 76px;
+  display: inline-block;
+  position: relative;
+}
+
+.myname:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.myname:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.myname1 {
+  font-weight: 1000;
+  font-size: 76px;
+  display: inline-block;
+  position: relative;
+}
+
+.myname1:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-in;
+}
+
+.myname1:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom right;
 }
 
 /*FOR THEME*/
@@ -107,6 +156,7 @@ p {
     transparent,
     var(--secondary-background-color),
     var(--secondary-background-color)
+    
   );
   margin-bottom: 50px;
 }
@@ -203,17 +253,49 @@ p {
   transition: 0.5s;
   scroll-behavior: smooth;
 }
+.about-sec{
+  color: var(--secondary-text-color) !important;
+}
 .about-img {
   margin-left: -100px;
   right: -60px;
   margin-top: 30px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1.5s ease;
+}
+.about-img:hover {
+  filter: grayscale(0%);
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  transition: 1s ease;
 }
 
 .display-1 {
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 1000;
-  color: #000;
+  /* color: #000; */
   margin-bottom: 30px;
+  display: inline-block;
+  position: relative;
+}
+.display-1:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #2ea361;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-in;
+}
+
+.display-1:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom right;
 }
 
 .position-absolute {
@@ -260,10 +342,18 @@ p {
 }
 
 /* =================== Skills======================*/
-.all-skills{
+.all-skills {
   flex-direction: column;
+  margin-bottom: 50px;
+}
+.skill-tag{
+  transition: .3s;
+  transform: scale(1.0);
 }
 
+.skill-tag:hover {
+  transform: scale(1.1);
+}
 
 /* =================== Quality ======================*/
 .ex-me {
