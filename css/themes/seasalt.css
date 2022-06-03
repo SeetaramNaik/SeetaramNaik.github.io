@@ -2,4 +2,7 @@
 :root{
     --primary-background-color: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
     --primary-text-color: #fff;
+    --secondary-text-color: rgb(157, 154, 154);
+    --name-color: rgb(62, 182, 226);
+    --hover-color:rgb(47, 217, 243);
 }

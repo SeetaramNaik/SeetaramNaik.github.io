@@ -46,11 +46,16 @@ body {
   background: var(--primary-background-color);
 }
 
+.intro{
+  color: var(--primary-text-color);
+}
+
 .myname {
   font-weight: 1000;
   font-size: 76px;
   display: inline-block;
   position: relative;
+  color:var(--primary-text-color);
 }
 
 .myname:after {
@@ -61,7 +66,7 @@ body {
   height: 5px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background-color: var(--name-color);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -76,6 +81,7 @@ body {
   font-size: 76px;
   display: inline-block;
   position: relative;
+  color:var(--primary-text-color);
 }
 
 .myname1:after {
@@ -86,7 +92,7 @@ body {
   height: 5px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background-color: var(--name-color);
   transform-origin: bottom left;
   transition: transform 0.25s ease-in;
 }
@@ -269,7 +275,7 @@ p {
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
   inset: 0 0 0 0;
-  background: hsl(200 100% 80%);
+  background: var(--hover-color);
   z-index: -1;
   transition: transform .3s ease;
 }
@@ -317,6 +323,13 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.info-label{
+  color: var(--secondary-text-color);
+}
+.info-txt{
+  color: var(--primary-text-color);
 }
 
 /* .about-sec:hover {
@@ -493,6 +506,7 @@ p {
 .all-skills {
   flex-direction: column;
   margin-bottom: 50px;
+  color: #fff;
 }
 .skill-tag {
   transition: 0.3s;
