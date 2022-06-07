@@ -106,13 +106,15 @@ body {
 .theme {
   position: absolute;
   top: 25px;
-  right: 25px;
+  right: 140px;
 }
 .theme-selector {
+  position: fixed;
   padding: 3px;
   border-radius: 50x;
   background-color: #000;
   color: #fff;
+  z-index: 1;
 }
 
 .circle {
@@ -155,7 +157,10 @@ p {
   );
   margin-bottom: 50px;
 } */
-.faded-1 {
+
+
+
+/* .faded-1 {
   height: 7.4rem;
   background-image: linear-gradient(
     360deg,
@@ -164,7 +169,20 @@ p {
     var(--secondary-background-color)
   );
   margin-bottom: 50px;
+} */
+
+
+.faded-1 {
+  height: 7.4rem;
+  background-image: linear-gradient(
+  360deg,
+    transparent,
+    rgba(8, 8, 8, 0.55),
+    #000
+  );
+  /* margin-top: 20px; */
 }
+
 .faded-2 {
   height: 7.4rem;
   background-image: linear-gradient(
@@ -176,12 +194,14 @@ p {
   margin-top: 20px;
 }
 
+
 .header {
   /* background: #0f0c29; */
   /* background: -webkit-linear-gradient(to right, #0f0c29, #302b63, #24243e);
   background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
   position: relative;
-  background: var(--secondary-background-color);
+  /* background: var(--secondary-background-color); */
+  background-color: #000;
 }
 .footer {
   /* background-color: #414e58; */
@@ -741,6 +761,35 @@ p {
   object-fit: cover;
 }
 
+/* .all-proj-info-container{
+  width:850px;
+} */
+
+/* .proj-slide{
+  width: 700px;
+}
+.project-info{
+  width: 800px;
+  background-color: #0bceaf;
+}
+.single-proj-pic{
+
+}
+
+.prev-proj-img{
+  width: 40px;
+  height: 30px;
+  top: 50%;
+  left:0;
+  background: #000;
+}
+.next-proj-img{
+  width: 40px;
+  height: 30px;
+  top: 50%;
+  right:0;
+  background: #000;
+} */
 /* ========================== Contact Us ========================*/
 
 .contact-form .help-block ul {
