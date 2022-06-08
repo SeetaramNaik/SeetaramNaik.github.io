@@ -162,19 +162,11 @@ p {
 
 
 
-/* .faded-1 {
-  height: 7.4rem;
-  background-image: linear-gradient(
-    360deg,
-    transparent,
-    var(--secondary-background-color),
-    var(--secondary-background-color)
-  );
-  margin-bottom: 50px;
-} */
+
 
 
 .faded-1 {
+
   height: 7.4rem;
   background-image: linear-gradient(
   360deg,
@@ -182,8 +174,14 @@ p {
     rgba(8, 8, 8, 0.55),
     #000
   );
-  /* margin-top: 20px; */
+
 }
+
+
+
+
+
+
 
 .faded-2 {
   height: 7.4rem;
@@ -203,7 +201,8 @@ p {
   background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
   position: relative;
   /* background: var(--secondary-background-color); */
-  background-image: url('/img/universe.webp');
+  /* background-image: url('/img/universe.webp'); */
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/img/star1.webp');
   background-color: #000;
 }
 .footer {
