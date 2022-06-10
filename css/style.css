@@ -814,6 +814,10 @@ p {
 /* .input:hover{
   border: 1px solid rgb(47, 237, 251);
 } */
+.input{
+  background-color: rgb(199, 197, 197);
+  color: rgb(74, 69, 69) !important;
+}
 .input:hover {
   outline: none !important;
   box-shadow: 3px 3px 5px #719ECE;
