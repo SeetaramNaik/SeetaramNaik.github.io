@@ -205,6 +205,16 @@ p {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/img/star1.webp');
   background-color: #000;
 }
+
+@media (max-width: 600px) {
+  .header-btn{
+    flex-direction: column !important;
+  }
+  .resume-btn{
+    margin-top: 20px;
+  }
+}
+
 .footer {
   /* background-color: #414e58; */
   background-color: #000;
