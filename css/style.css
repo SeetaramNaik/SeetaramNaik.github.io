@@ -63,6 +63,14 @@ body {
   position: relative;
   color: var(--primary-text-color);
 }
+.quote{
+  color:rgb(162, 160, 163);
+  margin-top: 20px;
+}
+
+.striked{
+  text-decoration: line-through;
+}
 
 .myname:after {
   content: '';
