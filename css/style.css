@@ -68,17 +68,18 @@ body {
   margin-top: 20px;
 }
 
+
 .striked {
   text-decoration: line-through;
 }
 .react {
   background-color: #0741c8;
   color: rgb(33, 200, 215);
-  padding: 2px;
+  padding: 4px;
   border-radius: 5px;
 }
 .node {
-  background-color: #0ff326;
+  background-color: #216e29;
   color: rgb(251, 250, 250);
   padding: 2px;
   border-radius: 5px;
@@ -416,7 +417,20 @@ p {
 }
 .info-txt {
   color: var(--primary-text-color);
+
 }
+.about-sec>div>h3{
+  background-color: #fff;
+  color:#000 !important;
+  text-align: center;
+  font-size:30px;
+  font-weight: 900;
+  padding:10px;
+}
+.about-sec>div>p{
+  line-height: 200%;
+}
+
 
 /* .about-sec:hover {
   
@@ -609,7 +623,7 @@ p {
   color: rgb(20, 202, 234) !important;
 }
 .skill-tag-node {
-  background-color: rgb(32, 215, 26);
+  background-color: rgb(34, 120, 31);
   padding: 16px;
   border-radius: 10px;
   margin: 3px;
@@ -631,12 +645,12 @@ p {
   font-weight:1000;
 }
 .skill-tag-python {
-  background-color: rgb(77, 83, 176);
+  background-color: rgb(29, 37, 141);
   padding: 16px;
   border-radius: 10px;
   margin: 3px;
   font-weight:1000;
-  color: rgb(181, 207, 34) !important;
+  color: rgb(207, 241, 14) !important;
 }
 .skill-tag-html {
   background-color: rgb(221, 74, 44);
@@ -655,7 +669,7 @@ p {
   color: rgb(240, 246, 239) !important;
 }
 .skill-tag-javascript {
-  background-color: rgb(213, 245, 8);
+  background-color: rgb(248, 236, 9);
   padding: 16px;
   border-radius: 10px;
   margin: 3px;
