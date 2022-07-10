@@ -73,28 +73,32 @@ body {
   text-decoration: line-through;
 }
 .react {
-  background-color: #0741c8;
-  color: rgb(33, 200, 215);
-  padding: 4px;
+  background-color: #05256e;
+  color: rgb(80, 207, 219);
+  padding: 6px;
   border-radius: 5px;
+  font-weight: 900;
 }
 .node {
-  background-color: #216e29;
+  background-color: #1a5520;
   color: rgb(251, 250, 250);
-  padding: 2px;
+  padding: 6px;
   border-radius: 5px;
+  font-weight: 900;
 }
 .express {
   background-color: #fcfcfc;
   color: #000;
-  padding: 2px;
+  padding: 6px;
   border-radius: 5px;
+  font-weight: 900;
 }
 .mongo {
-  background-color: #5f4141;
-  color: rgb(7, 243, 23);
-  padding: 2px;
+  background-color: #6d4848;
+  color: rgb(83, 228, 93);
+  padding: 6px;
   border-radius: 5px;
+  font-weight: 900;
 }
 .mongo-img > img {
   width: 30px;
@@ -401,6 +405,7 @@ p {
 #about {
   transition: 0.5s;
   scroll-behavior: smooth;
+  
 }
 .about-sec {
   color: var(--secondary-text-color) !important;
@@ -410,6 +415,7 @@ p {
   background-color: var(--about-sec-color);
   border-radius: 40px;
   padding: 30px;
+  border: var(--about-sec-border-color) 5px solid;
 }
 
 .info-label {
