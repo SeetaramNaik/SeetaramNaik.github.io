@@ -71,6 +71,35 @@ body {
 .striked{
   text-decoration: line-through;
 }
+.react{
+  background-color: #0ea9f6;
+  color:#000;
+  padding:2px;
+  border-radius: 5px;
+}
+.node{
+  background-color: #03e019;
+  color:#000;
+  padding:2px;
+  border-radius: 5px;
+}
+.express{
+  background-color: #f99113;
+  color:#000;
+  padding:2px;
+  border-radius: 5px;
+}
+.mongo{
+  background-color: #be59e9;
+  color:#000;
+  padding:2px;
+  border-radius: 5px;
+}
+.mongo-img>img{
+  width:30px;
+  height:30px;
+}
+
 
 .myname:after {
   content: '';
