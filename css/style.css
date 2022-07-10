@@ -714,8 +714,44 @@ p {
   .skill-tag-c,
   .skill-tag-ps,
   .skill-tag-git{
-    padding:15px;
-    font-weight: 100016
+    padding:10px;
+    font-weight: 1000;
+  }
+}
+@media screen and (max-width: 435px) {
+  .skill-tag-react,
+  .skill-tag-node,
+  .skill-tag-mongo,
+  .skill-tag-mysql,
+  .skill-tag-python,
+  .skill-tag-html,
+  .skill-tag-css,
+  .skill-tag-javascript,
+  .skill-tag-restapi,
+  .skill-tag-unix,
+  .skill-tag-c,
+  .skill-tag-ps,
+  .skill-tag-git{
+    padding:8px;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 410px) {
+  .skill-tag-react,
+  .skill-tag-node,
+  .skill-tag-mongo,
+  .skill-tag-mysql,
+  .skill-tag-python,
+  .skill-tag-html,
+  .skill-tag-css,
+  .skill-tag-javascript,
+  .skill-tag-restapi,
+  .skill-tag-unix,
+  .skill-tag-c,
+  .skill-tag-ps,
+  .skill-tag-git{
+    padding:8px;
+    font-weight: 630;
   }
 }
 /* =================== Quality ======================*/
