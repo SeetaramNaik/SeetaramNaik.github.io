@@ -1,5 +1,11 @@
 
 :root{
-    --primary-background-color: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    --primary-background-color: linear-gradient(160deg, #49a2d6 0%, #80D0C7 100%);
     --primary-text-color: #fff;
+    --secondary-text-color: rgb(157, 154, 154);
+    --name-color: rgb(62, 182, 226);
+    --hover-color:rgb(47, 217, 243);
+    --about-sec-color: #033a8c;
+    --about-sec-border-color:#fff;
 }
+

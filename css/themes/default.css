@@ -5,6 +5,7 @@
     --secondary-text-color: rgb(157, 154, 154);
     --name-color: #0087ca;
     --hover-color: rgb(39, 182, 218);
-    --about-sec-color: #2a3170;
+    /* --about-sec-color: #2a3170; */
+    --about-sec-color: #0c0c14;
     --about-sec-border-color:#fff;
 }
