@@ -206,9 +206,14 @@ body {
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 450px) {
   .my-role{
-    font-size: 23px;
+    font-size: 35px;
+    margin-right: 30px;
+  }.name-role{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
