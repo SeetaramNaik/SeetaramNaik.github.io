@@ -46,31 +46,31 @@ body {
   /* background: -webkit-linear-gradient(to right, #0f0c29, #302b63, #24243e); */
 
   /* background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
-  background: var(--primary-background-color);
+
+
+ background: var(--primary-background-color);
+
 }
 
 .intro {
   color: var(--primary-text-color);
 }
 
-.myname {
-  /* font-family: 'Acme', sans-serif; */
-  /* font-family: 'Permanent Marker', cursive;
-  font-family: 'Poppins', sans-serif; */
-  font-weight: 900;
-  font-size: 86px;
-  display: inline-block;
-  position: relative;
-  color: var(--primary-text-color);
-}
+
 .quote {
   color: rgb(162, 160, 163);
   margin-top: 20px;
+  font-weight: 700;
 }
 .about-btn{
   display: flex;
   -webkit-box-pack: start;
   justify-content: start;
+  font-weight: 800;
+}
+
+.resume-btn{
+  font-weight: 800;
 }
 
 .rounded{
@@ -120,6 +120,18 @@ body {
   height: 30px;
 }
 
+.myname {
+  /* font-family: 'Acme', sans-serif; */
+  /* font-family: 'Permanent Marker', cursive;
+  font-family: 'Poppins', sans-serif; */
+  font-weight: 900;
+  font-size: 100px;
+  /* font-size: 86px; */
+  display: inline-block;
+  position: relative;
+  color: var(--primary-text-color);
+}
+
 .myname:after {
   content: '';
   position: absolute;
@@ -140,7 +152,8 @@ body {
 
 .myname1 {
   font-weight: 1000;
-  font-size: 86px;
+  /* font-size: 86px; */
+  font-size: 100px;
   display: inline-block;
   position: relative;
   color: var(--primary-text-color);
@@ -163,6 +176,64 @@ body {
   transform: scaleX(1);
   transform-origin: bottom right;
 }
+.name-role{
+  display: flex;
+  align-items: center;
+}
+
+.my-role{
+  display: flex;
+  flex-direction: column;
+  font-size: 35px;
+  position:relative;
+  top: 12px;
+  left:20px;
+  font-weight: 900;
+  /* color:#2f8dac !important;  */
+  /* color:#5309e8 !important;  */
+  color:var(--role-color) !important; 
+
+}
+@media (max-width: 995px) {
+  .name-role{
+    justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .my-role{
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 440px) {
+  .my-role{
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 400px) {
+   .name-role{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+   }
+   .my-role{
+    margin-right: 30px;
+    font-size: 30px;
+   }
+}
+
+@media (max-width: 520px) {
+  .intro {
+    margin-top: 20px;
+  }
+  .myname,
+  .myname1 {
+    font-size: 75px;
+  }
+}
 
 @media (max-width: 440px) {
   .intro {
@@ -171,6 +242,16 @@ body {
   .myname,
   .myname1 {
     font-size: 65px;
+  }
+}
+
+@media (max-width: 400px) {
+  .intro {
+    margin-top: 20px;
+  }
+  .myname,
+  .myname1 {
+    font-size: 60px;
   }
 }
 
@@ -431,6 +512,7 @@ p {
   border-radius: 40px;
   padding: 30px;
   border: var(--about-sec-border-color) 5px solid;
+  font-weight: 800;
 }
 
 .info-label {
@@ -738,6 +820,15 @@ p {
   font-weight:1000;
   color:rgb(18, 18, 18) !important;
 }
+
+.skill-tag-github{
+  background-color: rgb(3, 3, 3);
+  padding: 16px;
+  border-radius: 10px;
+  margin: 3px;
+  font-weight:1000;
+  color:rgb(252, 252, 252) !important;
+}
 @media screen and (max-width: 700px) {
   .skill-tag-react,
   .skill-tag-node,
@@ -789,7 +880,7 @@ p {
   .skill-tag-ps,
   .skill-tag-git{
     padding:8px;
-    font-weight: 630;
+    font-weight: 700;
   }
 }
 /* =================== Quality ======================*/
@@ -1110,4 +1201,8 @@ p {
    height: 100px;
    border-radius: 30px;
    margin: 30px;
+}
+
+.footer-logo h4,.footer-logo>p{
+  font-weight: 800;
 }
