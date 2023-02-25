@@ -1,5 +1,6 @@
 :root{
-    --primary-background-color: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    /* --primary-background-color: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
+    --primary-background-color:linear-gradient(90deg, rgba(4,4,4,1) 0%, rgba(66,65,65,1) 49%, rgba(6,6,6,1) 100%);
     --primary-text-color: rgb(254, 252, 252);
     --secondary-background-color: #000;
     --secondary-text-color: rgb(157, 154, 154);
@@ -9,5 +10,5 @@
     --about-sec-color: #0c0c14;
     --about-sec-border-color:#fff;
     /* --role-color: #5309e8; */
-    --role-color:rgb(39, 182, 218);
+    --role-color:rgb(136, 138, 138);
 }
