@@ -1,11 +1,12 @@
 
 :root{
-    --primary-background-color:linear-gradient(90deg, #9ebd13 0%, #008552 100%);
+    /* --primary-background-color:linear-gradient(90deg, #9ebd13 0%, #008552 100%); */
+    --primary-background-color:linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,120,1,1) 49%, rgba(0,0,0,1) 100%);
     --primary-text-color: #fff;
-    --secondary-text-color: rgb(78, 75, 75);
-    --name-color: rgb(223, 230, 39);
+    --secondary-text-color: rgb(168, 167, 167);
+    --name-color: rgb(124, 221, 6);
     --hover-color: rgb(168, 199, 44);
-    --about-sec-color: rgb(123, 160, 49);
+    --about-sec-color: rgb(130, 193, 4);
     --about-sec-border-color:rgb(237, 240, 235);
-    --role-color:rgb(123, 160, 49);
+    --role-color:rgb(31, 142, 1);
 }

@@ -76,9 +76,9 @@
             <option style="color: #fff;" value="" disabled>NOTE: Scroll down the site to see the effect</option>
             <option value="default">Default</option>
             <option value="seasalt">Sea Salt🔵</option>
-            <option value="lovelylilly">Lovely Lilly🟣</option>
+            <!-- <option value="lovelylilly">Lovely Lilly🟣</option> -->
             <option value="parfour">Par Four🟢</option>
-            <option value="dustycactus">Dusty Cactus🟠</option>
+            <option value="dustycactus">Dusty Cactus🟣</option>
             <!-- <option value="aquaspray">Aqua Spray</option>
              -->
           </select>
@@ -189,7 +189,7 @@
               <div class="col-sm-6 py-2">
                 <h6>
                   <span class="info-label">Expected graduation Year: </span
-                  ><span class="info-txt">2023</span>
+                  ><span class="info-txt">2023</span>`
                 </h6>
               </div>
               <!-- <div class="col-sm-6 py-2">
@@ -821,6 +821,24 @@
       </div>
      
     </div>
+    <div class="countdown" id="countdown">
+      <div>
+        <span id="days"></span>
+        <div class="smalltext">Days</div>
+      </div>
+      <div>
+        <span id="hours"></span>
+        <div class="smalltext">Hours</div>
+      </div>
+      <div>
+        <span id="minutes"></span>
+        <div class="smalltext">Minutes</div>
+      </div>
+      <div>
+        <span id="seconds"></span>
+        <div class="smalltext">Seconds</div>
+      </div>
+    </div>
     <!-- Footer End -->
 
     <!-- Scroll to Bottom -->
@@ -878,6 +896,31 @@
           activateTheme(themeSelect.value);
         });
       }
+      function countdown() {
+        var now = new Date();
+        var eventDate = new Date("2023-03-23"); // Change this to your event date
+        var currentTime = now.getTime();
+        var eventTime = eventDate.getTime();
+        var remTime = eventTime - currentTime;
+      
+        var seconds = Math.floor(remTime / 1000);
+        var minutes = Math.floor(seconds / 60);
+        var hours = Math.floor(minutes / 60);
+        var days = Math.floor(hours / 24);
+      
+        hours %= 24;
+        minutes %= 60;
+        seconds %= 60;
+      
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+      
+        setTimeout(countdown, 1000);
+      }
+      
+      countdown();
       initThemeSelector();
     </script>
   </body>

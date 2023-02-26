@@ -1,12 +1,13 @@
 
 :root{
-    --primary-background-color: linear-gradient(90deg, #dfa856 0%, #fa9a0a 100%);
+    /* --primary-background-color: linear-gradient(90deg, #dfa856 0%, #fa9a0a 100%); */
+    --primary-background-color:linear-gradient(90deg, rgba(26,0,110,1) 0%, rgba(87,5,89,1) 100%, rgba(53,34,162,1) 100%);
     --primary-text-color: #fff;
-    --secondary-text-color: rgb(41, 39, 39);
-    --ternary-text-color: #fff;
-    --name-color: rgb(217, 97, 32);
+    /* --secondary-text-color: rgb(41, 39, 39); */
+    --secondary-text-color: pink;
+    --name-color: rgb(105, 47, 166);
     --hover-color: rgb(228, 214, 186);
-    --about-sec-color:rgb(187, 97, 23);
+    --about-sec-color:rgb(157, 23, 187);
     --about-sec-border-color:rgb(236, 222, 222);
-    --role-color:rgb(187, 97, 23);
+    --role-color:rgb(127, 44, 186);
 }
