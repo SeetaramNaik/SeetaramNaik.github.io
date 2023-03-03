@@ -1349,13 +1349,26 @@ font-weight: 1000;
   margin-top: 15px;
   
 }
-.motivate>h3{
+.motivate>h4{
   font-weight: 1000;
+  color:#fff;
 }
 
 .motivate-inside{
   display: flex;
   flex-direction: row;
+}
+
+@media screen and (max-width: 460px) {
+  .motivate>h4 {
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .motivate>h4 {
+    font-size: small;
+  }
 }
 
 @media screen and (max-width: 580px) {
