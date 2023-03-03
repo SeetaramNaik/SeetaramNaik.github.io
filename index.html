@@ -821,6 +821,9 @@
       </div>
      
     </div>
+    <div class="motivate">
+     <div class="motivate-inside"><h3>Don't give up...No matter what <span id="emoji"></span>!</h3></div> 
+    </div>
     <div class="countdown" id="countdown">
       <div>
         <span id="days"></span>
@@ -874,6 +877,17 @@
     <!-- Certificate slide -->
 
     <script>
+       const emojis = ["😀", "😂","😁","😍", "🤔", "🤯","🙃","😙","🤪","🫣","😐","😬","😴","😎","😠","😫","😱","😭","😮","😟","🥶","🤧","🥵","🤒"]; // Define an array of emojis to cycle through
+    let index = 0;
+    const emojiElement = document.getElementById("emoji");
+
+    setInterval(() => {
+      index = (index + 1) % emojis.length; // Increment index and loop back to 0 when it exceeds the array length
+      emojiElement.innerHTML = emojis[index]; // Set the HTML content of the emoji element to the current emoji
+    }, 1000); // Change the emoji every second
+
+
+
       /*For Theme*/
       function clearForm() {
         const form = document.getElementById('contactForm');
