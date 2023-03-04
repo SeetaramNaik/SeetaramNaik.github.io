@@ -1318,6 +1318,11 @@ p {
   font-weight: 800;
 }
 
+.sign{
+  width: 10px;
+  height: 10px;
+}
+
 .countdown{
   display: flex;
   justify-content: center;
