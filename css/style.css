@@ -505,7 +505,8 @@ p {
   align-items: center;
   justify-content: center;
   /* background-color: var(--about-sec-color); */
-  border-radius: 10px;
+  background-color: var(--about-sec-bg-color);
+  border-radius: 20px;
   padding: 30px;
   /* border: var(--about-sec-border-color) 5px solid; */
   font-weight: 800;
