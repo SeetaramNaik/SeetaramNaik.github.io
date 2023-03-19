@@ -1183,10 +1183,10 @@ p {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 50px;
   border-radius: 30px;
-  width: 90%;
+  width: 100%;
   max-height: 800px;
   overflow: scroll;
   box-shadow: 5px 10px 18px #888888;
@@ -1223,13 +1223,50 @@ p {
   box-shadow: 5px 10px 18px #888888; */
  
   display: block;
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 300px;
   object-fit: cover;
   border-radius: 20px;
   box-shadow: 5px 10px 18px #888888; 
   margin-bottom: 10px;
 }
+
+@media screen and (max-width: 1200px) {
+  .proj-img {
+    width: 450px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .proj-img {
+    width: 400px;
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .proj-img {
+    width: 370px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .proj-img {
+    width: 350px;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .proj-img {
+    width: 320px;
+    height: 260px;
+  }
+}
+
+
 
 /* .all-proj-info-container{
   width:850px;
