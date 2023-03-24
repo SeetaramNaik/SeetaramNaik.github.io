@@ -1491,3 +1491,52 @@ font-weight: 1000;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
+
+
+
+
+
+.bubble-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bubble {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  margin: 10px;
+  font-size: 18px;
+  text-align: center;
+  transition: transform 0.2s;
+  animation-name: bubble;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.bubble:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@keyframes bubble {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(69, 70, 71, 0.8);
+  }
+}
+
+
+
+
