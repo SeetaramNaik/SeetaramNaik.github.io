@@ -504,8 +504,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: var(--about-sec-color); */
-  background-color: var(--about-sec-bg-color);
+  
+  /* background-color: var(--about-sec-bg-color); */
+  background-color: #2c2b2b;
   border-radius: 20px;
   padding: 30px;
   /* border: var(--about-sec-border-color) 5px solid; */
@@ -522,20 +523,23 @@ p {
 
 .info-label {
   color: var(--secondary-text-color);
+  font-size: 18px;
 }
 .info-txt {
   color: var(--primary-text-color);
+  font-size: 21px;
 }
 .about-sec > div > h3 {
-  background-color: #fff;
+  background-color: #d4ef25;
   color: #000 !important;
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 900;
   padding: 10px;
 }
 .about-sec > div > p {
-  line-height: 200%;
+  line-height: 220%;
+  font-size: 22px;
 }
 
 /* .about-sec:hover {
@@ -733,6 +737,12 @@ p {
   transition: 0.3s;
   transform: scale(1);
 }
+.skill-tag-react>img{
+  height: 40px;
+  width: 40px;
+  border-radius: 40%;
+  margin: auto;
+}
 
 .skill-tag-node {
   background-color: rgb(34, 120, 31);
@@ -742,6 +752,12 @@ p {
   font-weight: 1000;
   transition: 0.3s;
   transform: scale(1);
+}
+.skill-tag-node>img{
+  height: 40px;
+  width: 40px;
+  border-radius: 40%;
+  margin: auto;
 }
 .skill-tag-mongo {
   background-color: rgb(114, 64, 64);
@@ -753,6 +769,12 @@ p {
   transition: 0.3s;
   transform: scale(1);
 }
+.skill-tag-mongo>img{
+  height: 45px;
+  width: 45px;
+  border-radius: 40%;
+  margin: auto;
+}
 .skill-tag-mysql {
   background-color: rgb(231, 87, 221);
   padding: 16px;
@@ -761,6 +783,12 @@ p {
   font-weight: 1000;
   transition: 0.3s;
   transform: scale(1);
+}
+.skill-tag-mysql>img{
+  height: 45px;
+  width: 45px;
+  border-radius: 40%;
+  margin: auto;
 }
 .skill-tag-python {
   background-color: rgb(29, 37, 141);
@@ -772,6 +800,12 @@ p {
   transition: 0.3s;
   transform: scale(1);
 }
+.skill-tag-python>img{
+  height: 45px;
+  width: 45px;
+  border-radius: 40%;
+  margin: auto;
+}
 .skill-tag-html {
   background-color: rgb(221, 74, 44);
   padding: 16px;
@@ -781,6 +815,12 @@ p {
   color: rgb(254, 254, 254) !important;
   transition: 0.3s;
   transform: scale(1);
+}
+.skill-tag-html>img{
+  height: 45px;
+  width: 45px;
+  border-radius: 40%;
+  margin: auto;
 }
 .skill-tag-css {
   background-color: rgb(37, 23, 228);
@@ -792,6 +832,12 @@ p {
   transition: 0.3s;
   transform: scale(1);
 }
+.skill-tag-css>img{
+  height: 45px;
+  width: 45px;
+  border-radius: 40%;
+  margin: auto;
+}
 .skill-tag-javascript {
   background-color: rgb(248, 236, 9);
   padding: 16px;
@@ -802,6 +848,12 @@ p {
   transition: 0.3s;
   transform: scale(1);
 }
+.skill-tag-javascript>img{
+  height: 45px;
+  width: 45px;
+  border-radius: 40%;
+  margin: auto;
+}
 .skill-tag-restapi {
   background-color: rgb(116, 197, 201);
   padding: 16px;
@@ -810,6 +862,12 @@ p {
   font-weight: 1000;
   transition: 0.3s;
   transform: scale(1);
+}
+.skill-tag-restapi>img{
+  height: 45px;
+  width: 45px;
+  border-radius: 40%;
+  margin: auto;
 }
 .skill-tag-unix {
   background-color: rgb(243, 247, 242);
@@ -821,6 +879,12 @@ p {
   transition: 0.3s;
   transform: scale(1);
 }
+.skill-tag-unix>img{
+  height: 45px;
+  width: 45px;
+  border-radius: 40%;
+  margin: auto;
+}
 .skill-tag-c {
   background-color: rgb(70, 124, 215);
   padding: 16px;
@@ -831,6 +895,12 @@ p {
   transition: 0.3s;
   transform: scale(1);
 }
+.skill-tag-c>img{
+  height: 45px;
+  width: 45px;
+  border-radius: 40%;
+  margin: auto;
+}
 .skill-tag-ps {
   background-color: rgb(168, 160, 40);
   padding: 16px;
@@ -839,6 +909,12 @@ p {
   font-weight: 1000;
   transition: 0.3s;
   transform: scale(1);
+}
+.skill-tag-ps>img{
+  height: 45px;
+  width: 45px;
+  border-radius: 40%;
+  margin: auto;
 }
 .skill-tag-git {
   background-color: rgb(210, 81, 52);
@@ -850,6 +926,12 @@ p {
   transition: 0.3s;
   transform: scale(1);
 }
+.skill-tag-git>img{
+  height: 45px;
+  width: 45px;
+  border-radius: 40%;
+  margin: auto;
+}
 
 .skill-tag-github {
   background-color: rgb(3, 3, 3);
@@ -860,6 +942,12 @@ p {
   color: rgb(252, 252, 252) !important;
   transition: 0.3s;
   transform: scale(1);
+}
+.skill-tag-github>img{
+  height: 45px;
+  width: 45px;
+  border-radius: 40%;
+  margin: auto;
 }
 
 /* HOVER EFFECT ON SKILL TAG */
