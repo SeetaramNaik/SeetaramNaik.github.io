@@ -189,6 +189,13 @@ body {
   /* color:#5309e8 !important;  */
   color: var(--role-color) !important;
 }
+
+.socgen-logo{
+  height: 50px;
+  width: 50px;
+  margin-bottom: 5;
+}
+
 @media (max-width: 995px) {
   .name-role {
     justify-content: center;
