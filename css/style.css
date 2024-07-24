@@ -190,6 +190,15 @@ body {
   color: var(--role-color) !important;
 }
 
+.bulb{
+  position: absolute;
+  top: 1400px;
+}
+
+.role{
+  background-color: #decf2b !important;
+}
+
 .socgen-logo{
   height: 50px;
   width: 50px;
@@ -507,13 +516,18 @@ p {
   scroll-behavior: smooth;
 }
 .about-sec {
+  /* color: var(--secondary-text-color) !important; */
   color: var(--secondary-text-color) !important;
+
   display: flex;
   align-items: center;
   justify-content: center;
   
   /* background-color: var(--about-sec-bg-color); */
+
+
   background-color: #2c2b2b;
+
   border-radius: 20px;
   padding: 30px;
   /* border: var(--about-sec-border-color) 5px solid; */
